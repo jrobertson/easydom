@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'easydom'
-  s.version = '0.2.0'
+  s.version = '0.2.1'
   s.summary = 'Experimental gem to access XML elements from simple dot notation (e.g. person.name).'
   s.authors = ['James Robertson']
   s.files = Dir['lib/easydom.rb']

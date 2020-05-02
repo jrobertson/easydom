@@ -6,6 +6,8 @@ require 'free_dom'
 
 
 class EasyDom
+  
+  attr_reader :e
 
   def initialize(obj=nil, debug: false, root: 'root')
 
@@ -23,6 +25,10 @@ class EasyDom
   
   def to_s()
     @e.attributes.values.first.to_s
+  end
+  
+  def to_sliml()
+    @e.to_sliml()
   end
 
   def method_missing(sym, *args, &block)
